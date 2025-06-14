@@ -1,0 +1,145 @@
+
+.about-social-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.social-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.social-box ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  justify-content: flex-end;
+}
+
+
+.social-box ul li {
+  list-style: none;
+  margin: 0 5px;
+}
+
+.social-box ul li a .fa {
+  font-size: 40px;
+  color: #262626;
+  line-height: 80px;
+  transition: 0.5s;
+  padding-right: 14px;
+}
+
+.social-box ul li a span {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  color: #262626;
+  letter-spacing: 4px;
+  transition: 0.5s;
+}
+
+.social-box ul li a {
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  height: 80px;
+  background: #fff;
+  text-align: left;
+  padding-left: 20px;
+  transform: rotate(-30deg) skew(25deg) translate(0, 0);
+  transition: 0.5s;
+  box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.social-box ul li a:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background: #b1b1b1;
+  transform: rotate(0deg) skewY(-45deg);
+}
+
+.social-box ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
+  background: #b1b1b1;
+  transform: rotate(0deg) skewX(-45deg);
+}
+
+.social-box ul li a:hover {
+  transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+.social-box ul li:hover .fa,
+.social-box ul li:hover span {
+  color: #fff;
+}
+
+/* Facebook */
+.social-box ul li:hover:nth-child(1) a {
+  background: #3b5998;
+}
+.social-box ul li:hover:nth-child(1) a:before {
+  background: #365492;
+}
+.social-box ul li:hover:nth-child(1) a:after {
+  background: #4a69ad;
+}
+
+/* Twitter */
+.social-box ul li:hover:nth-child(2) a {
+  background: #00aced;
+}
+.social-box ul li:hover:nth-child(2) a:before {
+  background: #097aa5;
+}
+.social-box ul li:hover:nth-child(2) a:after {
+  background: #53b9e0;
+}
+
+/* Google+ */
+.social-box ul li:hover:nth-child(3) a {
+  background: #dd4b39;
+}
+.social-box ul li:hover:nth-child(3) a:before {
+  background: #b33a2b;
+}
+.social-box ul li:hover:nth-child(3) a:after {
+  background: #e66a5a;
+}
+
+/* Instagram */
+.social-box ul li:hover:nth-child(4) a {
+  background: #e4405f;
+}
+.social-box ul li:hover:nth-child(4) a:before {
+  background: #d81c3f;
+}
+.social-box ul li:hover:nth-child(4) a:after {
+  background: #e46880;
+}
